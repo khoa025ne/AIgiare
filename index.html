@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PHAstore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Sparkle particles -->
+  <canvas class="sparkle-canvas" id="sparkleCanvas" aria-hidden="true"></canvas>
+
+  <!-- NAV -->
+  <header class="nav-island" id="nav">
+    <div class="nav-island__inner">
+      <a href="#" class="logo" aria-label="PHAstore">
+        <img src="logo.png" alt="PHAstore" class="logo__img" width="30" height="30" />
+        <span class="logo__text">PHA<span>store</span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="#pricing">B&#7843;ng gi&#225;</a>
+        <a href="#benefits">Quy&#7873;n l&#7907;i</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Li&#234;n h&#7879;</a>
+      </nav>
+      <a href="#pricing" class="btn-pill btn-pill--sm btn-pill--primary"><span>Mua ngay</span></a>
+      <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- Mobile overlay -->
+  <div class="nav-overlay" id="navOverlay">
+    <nav class="nav-overlay__links">
+      <a href="#pricing" class="nav-ol">B&#7843;ng gi&#225;</a>
+      <a href="#benefits" class="nav-ol">Quy&#7873;n l&#7907;i</a>
+      <a href="#faq" class="nav-ol">FAQ</a>
+      <a href="#contact" class="nav-ol">Li&#234;n h&#7879;</a>
+    </nav>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero" data-hero3d>
+    <div class="hero__bg-layer" aria-hidden="true"></div>
+    <div class="container hero__inner" id="heroTilt">
+      <div class="eyebrow reveal"><span class="eyebrow__dot"></span>Google AI Pro &#183; Ch&#237;nh ch&#7911;</div>
+
+      <h1 class="hero__h1 reveal">
+        <span class="h1-line">Tr&#237; tu&#7879; nh&#226;n t&#7841;o</span>
+        <span class="h1-line"><span class="text-scramble" data-final="m&#7841;nh nh&#7845;t">m&#7841;nh nh&#7845;t</span> c&#7911;a Google</span>
+        <span class="h1-line h1-price">ch&#7881; <mark>39k</mark>/th&#225;ng</span>
+      </h1>
+
+      <p class="hero__sub reveal">Gemini 3.1 Pro &#183; 5TB Drive &#183; YouTube Premium Lite &#183; NotebookLM &#8212; to&#224;n b&#7897; quy&#7873;n l&#7907;i ch&#237;nh h&#227;ng, kh&#244;ng l&#7897; th&#244;ng tin, b&#7843;o h&#224;nh 6 th&#225;ng.</p>
+
+      <p class="hero__urgency reveal">Google AI Pro l&#224; s&#7843;n ph&#7849;m AI h&#224;ng &#273;&#7847;u c&#7911;a Google &#8212; <strong>&#273;&#226;y l&#224; th&#7901;i &#273;i&#7875;m v&#224;ng</strong> &#273;&#7875; s&#7903; h&#7919;u tr&#432;&#7899;c khi c&#417; h&#7897;i qua &#273;i.</p>
+
+      <div class="hero__cta reveal">
+        <a href="#pricing" class="btn-pill btn-pill--lg btn-pill--primary"><span>Xem b&#7843;ng gi&#225;</span><span class="btn-pill__arrow"><svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <a href="https://www.facebook.com/share/1CjDBdp91B/" target="_blank" class="btn-pill btn-pill--lg btn-pill--ghost"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" fill="#1877F2"/></svg><span>Facebook</span></a>
+      </div>
+    </div>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true"><div class="marquee__track">
+      <span class="mq-item">Gemini Pro</span><span class="mq-sep">&#183;</span>
+      <span class="mq-item">Google Drive 5TB</span><span class="mq-sep">&#183;</span>
+      <span class="mq-item">YouTube Premium</span><span class="mq-sep">&#183;</span>
+      <span class="mq-item">NotebookLM</span><span class="mq-sep">&#183;</span>
+      <span class="mq-item">AI Studio</span><span class="mq-sep">&#183;</span>
+      <span class="mq-item">Google Flow</span><span class="mq-sep">&#183;</span>
+      <span class="mq-item">Deep Research</span><span class="mq-sep">&#183;</span>
+      <span class="mq-item">Gmail AI</span><span class="mq-sep">&#183;</span>
+      <span class="mq-item">Gemini Pro</span><span class="mq-sep">&#183;</span>
+      <span class="mq-item">Google Drive 5TB</span><span class="mq-sep">&#183;</span>
+      <span class="mq-item">YouTube Premium</span><span class="mq-sep">&#183;</span>
+      <span class="mq-item">NotebookLM</span><span class="mq-sep">&#183;</span>
+      <span class="mq-item">AI Studio</span><span class="mq-sep">&#183;</span>
+      <span class="mq-item">Google Flow</span><span class="mq-sep">&#183;</span>
+      <span class="mq-item">Deep Research</span><span class="mq-sep">&#183;</span>
+      <span class="mq-item">Gmail AI</span><span class="mq-sep">&#183;</span>
+    </div></div>
+
+    <div class="wave-divider" aria-hidden="true"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 30C240 50 480 10 720 30C960 50 1200 10 1440 30V60H0Z" fill="var(--bg)"/></svg></div>
+  </section>
+
+  <!-- PRICING — Stacked Infinite Momentum Carousel -->
+  <section class="pricing-section pricing-section--white" id="pricing">
+    <div class="container">
+      <div class="section-header"><h2 class="clip-reveal">Ch&#7885;n g&#243;i ph&#249; h&#7907;p</h2><p>Vu&#7889;t &#273;&#7875; kh&#225;m ph&#225; &#183; L&#7863;p v&#244; h&#7841;n</p></div>
+    </div>
+    <div class="pc-viewport" id="pcViewport">
+      <div class="pc-track" id="pcTrack">
+        <!-- Cards sẽ được JS clone để tạo infinite loop -->
+        <div class="pc-slide"><div class="pc-card-new"><div class="pc-card-new__border"></div><div class="pc-card-new__inner">
+          <div class="pcn-tag pcn-tag--hot">Ph&#7893; bi&#7871;n</div>
+          <div class="pcn-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+          <h3>G&#243;i 1 Th&#225;ng</h3>
+          <div class="pcn-price">39.000&#8363;<span>/th&#225;ng</span></div>
+          <p class="pcn-desc">Ph&#249; h&#7907;p d&#249;ng th&#7917; ho&#7863;c ng&#7855;n h&#7841;n</p>
+          <div class="pcn-divider"></div>
+          <ul class="pcn-list">
+            <li>Gemini 3.1 Pro &#8211; h&#7841;n m&#7913;c m&#7903; r&#7897;ng</li>
+            <li>Deep Research + AI trong Gmail, Docs</li>
+            <li>5TB l&#432;u tr&#7919; &#273;&#225;m m&#226;y</li>
+            <li>YouTube Premium Lite</li>
+            <li>NotebookLM m&#7903; r&#7897;ng</li>
+            <li>Chia s&#7867; 5 th&#224;nh vi&#234;n</li>
+            <li>B&#7843;o h&#224;nh 6 th&#225;ng</li>
+          </ul>
+          <a href="https://www.facebook.com/share/1CjDBdp91B/" target="_blank" class="pcn-btn"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" fill="white"/></svg>Mua qua Facebook</a>
+        </div></div></div>
+
+        <div class="pc-slide"><div class="pc-card-new"><div class="pc-card-new__border"></div><div class="pc-card-new__inner">
+          <div class="pcn-tag">4 th&#225;ng</div>
+          <div class="pcn-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+          <h3>G&#243;i 4 Th&#225;ng</h3>
+          <div class="pcn-price">139.000&#8363;<span>/4 th&#225;ng</span></div>
+          <p class="pcn-save">Ti&#7871;t ki&#7879;m 11%</p>
+          <p class="pcn-desc">D&#249;ng l&#226;u d&#224;i, gi&#225; t&#7889;t h&#417;n</p>
+          <div class="pcn-divider"></div>
+          <ul class="pcn-list">
+            <li>To&#224;n b&#7897; quy&#7873;n l&#7907;i g&#243;i 1 th&#225;ng</li>
+            <li>Gemini 3.1 Pro h&#7841;n m&#7913;c cao</li>
+            <li>5TB Drive li&#234;n t&#7909;c 4 th&#225;ng</li>
+            <li>YouTube Premium 4 th&#225;ng</li>
+            <li>NotebookLM m&#7903; r&#7897;ng</li>
+            <li>Chia s&#7867; 5 th&#224;nh vi&#234;n</li>
+            <li>B&#7843;o h&#224;nh 6 th&#225;ng</li>
+          </ul>
+          <a href="https://www.facebook.com/share/1CjDBdp91B/" target="_blank" class="pcn-btn"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" fill="white"/></svg>Mua qua Facebook</a>
+        </div></div></div>
+
+        <div class="pc-slide"><div class="pc-card-new"><div class="pc-card-new__border"></div><div class="pc-card-new__inner">
+          <div class="pcn-tag">6 th&#225;ng</div>
+          <div class="pcn-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+          <h3>G&#243;i 6 Th&#225;ng</h3>
+          <div class="pcn-price">179.000&#8363;<span>/6 th&#225;ng</span></div>
+          <p class="pcn-save">Ti&#7871;t ki&#7879;m 23%</p>
+          <p class="pcn-desc">&#272;&#432;&#7907;c nhi&#7873;u ng&#432;&#7901;i ch&#7885;n nh&#7845;t</p>
+          <div class="pcn-divider"></div>
+          <ul class="pcn-list">
+            <li>To&#224;n b&#7897; quy&#7873;n l&#7907;i g&#243;i 1 th&#225;ng</li>
+            <li>Deep Research kh&#244;ng gi&#7899;i h&#7841;n</li>
+            <li>5TB Drive li&#234;n t&#7909;c 6 th&#225;ng</li>
+            <li>YouTube Premium + NotebookLM</li>
+            <li>Google Home Premium</li>
+            <li>Chia s&#7867; 5 th&#224;nh vi&#234;n</li>
+            <li>B&#7843;o h&#224;nh 6 th&#225;ng</li>
+          </ul>
+          <a href="https://www.facebook.com/share/1CjDBdp91B/" target="_blank" class="pcn-btn"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" fill="white"/></svg>Mua qua Facebook</a>
+        </div></div></div>
+
+        <div class="pc-slide"><div class="pc-card-new"><div class="pc-card-new__border"></div><div class="pc-card-new__inner">
+          <div class="pcn-tag pcn-tag--best">T&#7889;t nh&#7845;t</div>
+          <div class="pcn-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+          <h3>G&#243;i 1 N&#259;m</h3>
+          <div class="pcn-price">280.000&#8363;<span>/n&#259;m</span></div>
+          <p class="pcn-save">Ti&#7871;t ki&#7879;m 40%</p>
+          <p class="pcn-desc">Gi&#225; t&#7889;t nh&#7845;t &#8212; d&#224;nh cho ai nghi&#234;m t&#250;c</p>
+          <div class="pcn-divider"></div>
+          <ul class="pcn-list">
+            <li>To&#224;n b&#7897; + h&#7841;n m&#7913;c cao nh&#7845;t</li>
+            <li>Deep Research kh&#244;ng gi&#7899;i h&#7841;n</li>
+            <li>10$ Google Cloud h&#224;ng th&#225;ng</li>
+            <li>AI Studio &amp; Jules m&#7903; r&#7897;ng</li>
+            <li>5TB Drive tr&#7885;n n&#259;m</li>
+            <li>Chia s&#7867; 5 th&#224;nh vi&#234;n</li>
+            <li>B&#7843;o h&#224;nh 6 th&#225;ng</li>
+          </ul>
+          <a href="https://www.facebook.com/share/1CjDBdp91B/" target="_blank" class="pcn-btn pcn-btn--gold"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" fill="white"/></svg>Mua qua Facebook</a>
+        </div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="section section--cream" id="benefits">
+    <div class="container">
+      <div class="section-header"><h2 class="clip-reveal">Quy&#7873;n l&#7907;i chi ti&#7871;t</h2><p>&#272;&#250;ng nh&#432; Google c&#244;ng b&#7889; &#8212; kh&#244;ng c&#7855;t x&#233;n</p></div>
+      <div class="bento-grid reveal">
+        <div class="bento-card bento-card--span2 spotlight-card"><div class="bento-card__inner">
+          <h4>N&#226;ng cao hi&#7879;u su&#7845;t</h4>
+          <ul class="bc-list bc-list--numbered">
+            <li><span class="bc-num">01</span>Gemini 3.1 Pro v&#7899;i h&#7841;n m&#7913;c m&#7903; r&#7897;ng g&#7845;p 4 l&#7847;n</li>
+            <li><span class="bc-num">02</span>Deep Research chuy&#234;n s&#226;u trong Gemini</li>
+            <li><span class="bc-num">03</span>AI Mode cho Google Search + Deep Search</li>
+            <li><span class="bc-num">04</span>Gmail AI: hi&#7879;u &#273;&#237;nh, t&#243;m t&#7855;t h&#7897;p th&#432;</li>
+            <li><span class="bc-num">05</span>L&#224;m vi&#7879;c th&#244;ng minh h&#417;n trong Docs v&#224; Sheets</li>
+          </ul>
+        </div></div>
+        <div class="bento-card spotlight-card"><div class="bento-card__inner">
+          <h4>Kh&#417;i ngu&#7891;n s&#225;ng t&#7841;o</h4>
+          <ul class="bc-list bc-list--numbered">
+            <li><span class="bc-num">01</span>T&#7841;o &#7843;nh, nh&#7841;c, video v&#7899;i AI</li>
+            <li><span class="bc-num">02</span>Google Flow &#8212; s&#7843;n xu&#7845;t n&#7897;i dung AI</li>
+            <li><span class="bc-num">03</span>Bi&#7871;n t&#7845;u &#7843;nh trong Google Photos</li>
+          </ul>
+        </div></div>
+        <div class="bento-card spotlight-card"><div class="bento-card__inner">
+          <h4>H&#7885;c t&#7853;p th&#244;ng minh</h4>
+          <ul class="bc-list bc-list--numbered">
+            <li><span class="bc-num">01</span>NotebookLM m&#7903; r&#7897;ng &#8212; AI ghi ch&#250;</li>
+            <li><span class="bc-num">02</span>T&#7841;o b&#225;o c&#225;o nhi&#7873;u trang v&#7899;i Gemini</li>
+            <li><span class="bc-num">03</span>T&#243;m t&#7855;t t&#224;i li&#7879;u d&#224;i t&#7921; &#273;&#7897;ng</li>
+          </ul>
+        </div></div>
+        <div class="bento-card spotlight-card"><div class="bento-card__inner">
+          <h4>L&#7853;p tr&#236;nh nhanh h&#417;n</h4>
+          <ul class="bc-list bc-list--numbered">
+            <li><span class="bc-num">01</span>AI Studio &amp; Jules m&#7903; r&#7897;ng h&#7841;n m&#7913;c</li>
+            <li><span class="bc-num">02</span>Android Studio + Gemini n&#226;ng cao</li>
+            <li><span class="bc-num">03</span>10$ Google Cloud h&#224;ng th&#225;ng</li>
+          </ul>
+        </div></div>
+        <div class="bento-card bento-card--span2 spotlight-card"><div class="bento-card__inner bento-card__inner--row">
+          <div class="bc-half"><h4>5TB Google Drive</h4><p class="bc-desc">Drive, Gmail, Photos d&#249;ng chung. Chia s&#7867; t&#7889;i &#273;a 5 th&#224;nh vi&#234;n.</p></div>
+          <div class="bc-vdivider"></div>
+          <div class="bc-half"><h4>YouTube Premium Lite</h4><p class="bc-desc">&#205;t qu&#7843;ng c&#225;o, ph&#225;t n&#7873;n, offline. Google Home Premium mi&#7877;n ph&#237;.</p></div>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header"><h2 class="clip-reveal">C&#226;u h&#7887;i th&#432;&#7901;ng g&#7863;p</h2></div>
+      <div class="faq-wrap">
+        <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>G&#243;i n&#224;y c&#243; th&#7853;t s&#7921; ch&#237;nh ch&#7911; kh&#244;ng?</span><span class="faq-ic"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="faq-a">C&#243;. &#272;&#226;y l&#224; t&#224;i kho&#7843;n Google AI Pro th&#7853;t, k&#237;ch ho&#7841;t &#273;&#250;ng quy tr&#236;nh c&#7911;a Google.</div></div>
+        <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Th&#244;ng tin c&#7911;a t&#244;i c&#243; b&#7883; l&#7897; kh&#244;ng?</span><span class="faq-ic"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="faq-a">Ho&#224;n to&#224;n kh&#244;ng. Ch&#250;ng t&#244;i kh&#244;ng y&#234;u c&#7847;u v&#224; kh&#244;ng l&#432;u tr&#7919; th&#244;ng tin c&#225; nh&#226;n n&#224;o.</div></div>
+        <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Sau khi mua t&#244;i nh&#7853;n &#273;&#432;&#7907;c g&#236;?</span><span class="faq-ic"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="faq-a">Sau khi thanh to&#225;n, b&#7841;n nh&#7853;n h&#432;&#7899;ng d&#7851;n k&#237;ch ho&#7841;t qua Zalo ho&#7863;c Facebook ngay l&#7853;p t&#7913;c.</div></div>
+        <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>B&#7843;o h&#224;nh nh&#432; th&#7871; n&#224;o?</span><span class="faq-ic"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="faq-a">B&#7843;o h&#224;nh 6 th&#225;ng t&#7915; ng&#224;y k&#237;ch ho&#7841;t. S&#7921; c&#7889; kh&#244;ng do ph&#237;a b&#7841;n s&#7869; &#273;&#432;&#7907;c h&#7895; tr&#7907; x&#7917; l&#253; ngay.</div></div>
+        <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>C&#243; th&#7875; chia s&#7867; v&#7899;i ng&#432;&#7901;i kh&#225;c kh&#244;ng?</span><span class="faq-ic"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="faq-a">&#272;&#432;&#7907;c. Google AI Pro cho ph&#233;p chia s&#7867; v&#7899;i t&#7889;i &#273;a 5 th&#224;nh vi&#234;n trong gia &#273;&#236;nh.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT — Version A: 2 columns -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header"><h2 class="clip-reveal">Li&#234;n h&#7879; ngay</h2><p>Nh&#7855;n tr&#7921;c ti&#7871;p qua Zalo ho&#7863;c Facebook &#8212; ph&#7843;n h&#7891;i trong v&#224;i ph&#250;t</p></div>
+
+      <div class="contact-stage reveal">
+        <!-- Left -->
+        <div class="contact-stage__left">
+          <div class="cs-label">H&#7895; tr&#7907; 24/7</div>
+          <h3 class="cs-headline">Ch&#250;ng t&#244;i &#7903; &#273;&#226;y<br/><span class="cs-headline__accent">ngay b&#226;y gi&#7901;</span></h3>
+          <p class="cs-body">Google AI Pro l&#224; s&#7843;n ph&#7849;m AI h&#224;ng &#273;&#7847;u th&#7871; gi&#7899;i c&#7911;a Google. &#272;&#226;y l&#224; th&#7901;i &#273;i&#7875;m v&#224;ng &#8212; n&#7855;m b&#7855;t ngay.</p>
+          <div class="cs-stats">
+            <div class="cs-stat"><span class="cs-stat__val">97%</span><span class="cs-stat__desc">Ti&#7871;t ki&#7879;m</span></div>
+            <div class="cs-stat__sep"></div>
+            <div class="cs-stat"><span class="cs-stat__val">6 th&#225;ng</span><span class="cs-stat__desc">B&#7843;o h&#224;nh</span></div>
+            <div class="cs-stat__sep"></div>
+            <div class="cs-stat"><span class="cs-stat__val">100%</span><span class="cs-stat__desc">Ch&#237;nh ch&#7911;</span></div>
+          </div>
+        </div>
+
+        <!-- Right: 2 cards -->
+        <div class="contact-stage__right">
+          <!-- Em Pha -->
+          <div class="csc-card csc-card--pha glow-card">
+            <div class="csc-card__glow"></div>
+            <div class="csc-card__top">
+              <div class="csc-avatar csc-avatar--pha"><span>P</span><span class="csc-avatar__ring"></span></div>
+              <div class="csc-identity">
+                <span class="csc-name">Em Pha</span>
+                <span class="csc-role">T&#432; v&#7845;n &amp; K&#237;ch ho&#7841;t</span>
+                <span class="csc-status"><span class="csc-status__dot"></span>&#272;ang tr&#7921;c tuy&#7871;n</span>
+              </div>
+            </div>
+            <div class="csc-card__body"><p class="csc-preview">"Nh&#7855;n tin ngay &#8212; m&#236;nh h&#7895; tr&#7907; k&#237;ch ho&#7841;t trong ng&#224;y cho b&#7841;n"</p></div>
+            <a href="https://zalo.me/0926544429" target="_blank" class="csc-btn csc-btn--primary">
+              <span class="csc-btn__icon"><svg width="17" height="17" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M44 24c0 11.05-8.95 20-20 20S4 35.05 4 24 12.95 4 24 4s20 8.95 20 20z" fill="white" fill-opacity="0.2"/><path d="M32.5 16h-17a.5.5 0 0 0-.5.5v1.73c0 .28.22.5.5.5h12.65L14.83 32.5a.5.5 0 0 0 .36.84h17.31a.5.5 0 0 0 .5-.5v-1.73a.5.5 0 0 0-.5-.5H19.93l13.4-13.76a.5.5 0 0 0-.36-.85z" fill="#fff"/></svg></span>
+              <span>Zalo &#183; 0926 544 429</span>
+              <span class="csc-btn__arrow"><svg width="12" height="12" viewBox="0 0 13 13" fill="none"><path d="M2 6.5h9M7 2.5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </a>
+          </div>
+
+          <!-- Em Tun -->
+          <div class="csc-card csc-card--tun glow-card">
+            <div class="csc-card__glow csc-card__glow--tun"></div>
+            <div class="csc-card__top">
+              <div class="csc-avatar csc-avatar--tun"><span>T</span><span class="csc-avatar__ring csc-avatar__ring--tun"></span></div>
+              <div class="csc-identity">
+                <span class="csc-name">Em T&#249;n</span>
+                <span class="csc-role">T&#432; v&#7845;n &amp; H&#7895; tr&#7907;</span>
+                <span class="csc-status"><span class="csc-status__dot csc-status__dot--purple"></span>&#272;ang tr&#7921;c tuy&#7871;n</span>
+              </div>
+            </div>
+            <div class="csc-card__body"><p class="csc-preview">"Nh&#7855;n m&#236;nh nha &#8212; t&#432; v&#7845;n g&#243;i ph&#249; h&#7907;p v&#224; k&#237;ch ho&#7841;t ngay h&#244;m nay"</p></div>
+            <div class="csc-btns">
+              <a href="https://zalo.me/0776670264" target="_blank" class="csc-btn csc-btn--tun">
+                <span class="csc-btn__icon"><svg width="17" height="17" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M44 24c0 11.05-8.95 20-20 20S4 35.05 4 24 12.95 4 24 4s20 8.95 20 20z" fill="white" fill-opacity="0.2"/><path d="M32.5 16h-17a.5.5 0 0 0-.5.5v1.73c0 .28.22.5.5.5h12.65L14.83 32.5a.5.5 0 0 0 .36.84h17.31a.5.5 0 0 0 .5-.5v-1.73a.5.5 0 0 0-.5-.5H19.93l13.4-13.76a.5.5 0 0 0-.36-.85z" fill="#fff"/></svg></span>
+                <span>Zalo &#183; 0776 670 264</span>
+                <span class="csc-btn__arrow"><svg width="12" height="12" viewBox="0 0 13 13" fill="none"><path d="M2 6.5h9M7 2.5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </a>
+              <a href="https://www.facebook.com/share/1CjDBdp91B/" target="_blank" class="csc-btn csc-btn--fb">
+                <span class="csc-btn__icon"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" fill="#1877F2"/></svg></span>
+                <span>Facebook Em T&#249;n</span>
+                <span class="csc-btn__arrow"><svg width="12" height="12" viewBox="0 0 13 13" fill="none"><path d="M2 6.5h9M7 2.5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust strip -->
+      <div class="contact-trust reveal">
+        <span class="ct-trust-item"><svg width="14" height="14" viewBox="0 0 15 15" fill="none"><path d="M7.5 1.5L2 4v4.5c0 3 2.7 5.5 5.5 6 2.8-.5 5.5-3 5.5-6V4L7.5 1.5z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M5 7.5l2 2 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>Kh&#244;ng l&#7897; th&#244;ng tin</span>
+        <span class="ct-trust-sep">&#8212;</span>
+        <span class="ct-trust-item"><svg width="14" height="14" viewBox="0 0 15 15" fill="none"><circle cx="7.5" cy="7.5" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M7.5 4v4l2.5 1.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>K&#237;ch ho&#7841;t trong ng&#224;y</span>
+        <span class="ct-trust-sep">&#8212;</span>
+        <span class="ct-trust-item"><svg width="14" height="14" viewBox="0 0 15 15" fill="none"><path d="M7.5 1.5l1.8 4h4.2l-3.4 2.5 1.3 4-3.9-2.5-3.9 2.5 1.3-4L1.5 5.5h4.2L7.5 1.5z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Ch&#237;nh ch&#7911; Google AI Pro</span>
+        <span class="ct-trust-sep">&#8212;</span>
+        <span class="ct-trust-item"><svg width="14" height="14" viewBox="0 0 15 15" fill="none"><path d="M7.5 1L2 4v4.5c0 3 2.7 5.5 5.5 6 2.8-.5 5.5-3 5.5-6V4L7.5 1z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>B&#7843;o h&#224;nh 6 th&#225;ng</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#" class="logo"><img src="logo.png" alt="PHAstore" class="logo__img" width="24" height="24" /><span class="logo__text">PHA<span>store</span></span></a>
+      <p class="footer__copy">&copy; 2025 PHAstore &#183; Kh&#244;ng ph&#7843;i &#273;&#7841;i di&#7879;n ch&#237;nh th&#7913;c c&#7911;a Google LLC</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
