@@ -349,6 +349,7 @@ ul{list-style:none}
 .pc-card-new__inner h3{font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:700;color:var(--text);margin-bottom:12px;letter-spacing:-0.5px}
 .pcn-price{font-family:'Space Grotesk',sans-serif;font-size:40px;font-weight:800;color:var(--text);letter-spacing:-2px;line-height:1;margin-bottom:6px}
 .pcn-price span{font-size:15px;font-weight:500;color:var(--text-3);letter-spacing:0;margin-left:4px}
+.pcn-price--contact{font-family:'Plus Jakarta Sans',sans-serif;font-size:24px;font-weight:700;letter-spacing:-0.5px;color:var(--blue);margin-bottom:12px;margin-top:6px}
 .pcn-save{font-size:12.5px;font-weight:600;color:var(--green);margin-bottom:4px}
 .pcn-desc{font-size:14px;color:var(--text-2);margin-bottom:24px;line-height:1.5}
 .pcn-divider{height:1px;background:rgba(0,0,0,0.06);margin-bottom:20px}
